@@ -47,3 +47,6 @@ Added the **create event** functionality so I could get data into the database, 
 ### 3. Global exception handling
 
 Added `ExceptionToProblemDetailsHandler`, a global exception handler that converts unhandled exceptions into `ProblemDetails` responses. I had seen this pattern in another project, and Claude also suggested it while I was prepping for this test.
+
+### 4. Unit Testing
+Added the xUnit Test Project, I unfortunately ran out of time and wasn't able to fully go through the testing process. 
