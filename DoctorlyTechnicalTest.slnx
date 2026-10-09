@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="Scheduler.Api/Scheduler.Api.csproj" />
+    <Project Path="Scheduler.Application/Scheduler.Application.csproj" />
+    <Project Path="Scheduler.Domain/Scheduler.Domain.csproj" />
+    <Project Path="Scheduler.Infrastructure/Scheduler.Infrastructure.csproj" />
+  </Folder>
+</Solution>
