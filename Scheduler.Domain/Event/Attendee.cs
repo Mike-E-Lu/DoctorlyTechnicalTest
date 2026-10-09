@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Scheduler.Domain.Event
 {
-    internal class Attendee
+    public class Attendee
     {
         public const int NameMaxLength = 100;
         public const int EmailMaxLength = 254;
@@ -18,7 +18,7 @@ namespace Scheduler.Domain.Event
         /// <summary>null = not responded yet, true = accepted, false = rejected.</summary>
         public bool? IsAttending { get; private set; }
 
-        private Attendee() { } // EF
+        private Attendee() { } // for EF: materialisation only,
 
         internal Attendee(string name, string email)
         {

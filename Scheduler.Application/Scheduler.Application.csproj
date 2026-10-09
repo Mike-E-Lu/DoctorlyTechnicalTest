@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Messaging\" />
-    <Folder Include="Commom\" />
-    <Folder Include="Persistence\" />
+    <ProjectReference Include="..\Scheduler.Domain\Scheduler.Domain.csproj" />
   </ItemGroup>
 
 </Project>
