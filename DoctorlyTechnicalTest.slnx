@@ -8,4 +8,5 @@
     <Project Path="Scheduler.Domain/Scheduler.Domain.csproj" />
     <Project Path="Scheduler.Infrastructure/Scheduler.Infrastructure.csproj" />
   </Folder>
+  <Project Path="Scheduler.Tests/Scheduler.Tests.csproj" />
 </Solution>
