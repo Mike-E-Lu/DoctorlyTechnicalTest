@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+using Scheduler.Api;
 using Scheduler.Infrastructure;
 using Scheduler.Infrastructure.Persistence;
 using System.Text.Json.Serialization;
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddInfrastructure(builder.Configuration.GetConnectionString("Scheduler"));
 builder.Services.AddProblemDetails();
+builder.Services.AddExceptionHandler<ExceptionToProblemDetailsHandler>();
 builder.Services.ConfigureHttpJsonOptions(o =>
 {
     o.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
